@@ -1,7 +1,7 @@
 import React from 'react';
-import './imageGrallery.css';
+import './Grallery.css';
 
-export const imageGrallery = () => {
+export default function Gallery() {
   return (
     <div>
       <div className='images-wrapper'>
@@ -44,4 +44,4 @@ export const imageGrallery = () => {
       </div>
     </div>
   );
-};
+}
