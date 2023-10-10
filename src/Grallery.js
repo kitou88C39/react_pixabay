@@ -1,7 +1,7 @@
 import React from 'react';
 import './Grallery.css';
 
-export default function Gallery({ fetchData }) {
+const Gallery = ({ fetchData }) => {
   return (
     <div>
       <div className='images-wrapper'>
@@ -16,4 +16,5 @@ export default function Gallery({ fetchData }) {
       </div>
     </div>
   );
-}
+};
+export default Gallery;
