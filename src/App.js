@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import './App.css';
-import imageGrallery from './imageGrallery';
+import Grallery from './Grallery';
 
-function App() {
+const App = () => {
   const [inputText, setInputText] = useState('');
   const ref = useRef();
 
@@ -17,9 +17,9 @@ function App() {
       <form onSubmit={(e) => handleSubmit(e)}>
         <input type='text' placeholder='画像を探す' ref={ref} />
       </form>
-      <imageGrallery />
+      <Grallery />
     </div>
   );
-}
+};
 
 export default App;
