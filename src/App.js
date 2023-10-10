@@ -1,4 +1,5 @@
 import './App.css';
+import { imageGrallery } from './imageGrallery';
 
 function App() {
   return (
@@ -6,8 +7,8 @@ function App() {
       <h2>My Pixabay</h2>
       <form>
         <input type='text' placeholder='画像を探す' />
-        <imageGrallery />
       </form>
+      <imageGrallery />
     </div>
   );
 }
