@@ -28,7 +28,7 @@ const App = () => {
       <form onSubmit={(e) => handleSubmit(e)}>
         <input type='text' placeholder='画像を探す' ref={ref} />
       </form>
-      <Grallery />
+      <Grallery fetchData={fetchData} />
     </div>
   );
 };
