@@ -3,12 +3,21 @@ import './App.css';
 import Grallery from './Grallery';
 
 const App = () => {
-  const [inputText, setInputText] = useState('');
+  const [fetchData, setFetchData] = useState([]);
   const ref = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefalt();
     console.log(ref.current.value);
+
+    //APIURL
+    const endpointURL = `https://pixabay.com/api/?key=23092783-0998eba9be67fd0d70aa43e8e&q=${ref.current.value}&image_type=photo`;
+    //APIを叩く
+    fetch(endpointURL)
+      .then((res) => {
+        return res.json();
+      })
+      .then((res) => {});
   };
 
   return (
