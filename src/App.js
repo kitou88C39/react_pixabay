@@ -6,6 +6,7 @@ function App() {
       <h2>My Pixabay</h2>
       <form>
         <input type='text' placeholder='画像を探す' />
+        <imageGrallery />
       </form>
     </div>
   );
