@@ -1,5 +1,5 @@
 import './App.css';
-import { imageGrallery } from './imageGrallery';
+import imageGrallery from './imageGrallery';
 
 function App() {
   return (
