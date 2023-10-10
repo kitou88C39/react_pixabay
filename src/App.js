@@ -17,7 +17,9 @@ const App = () => {
       .then((res) => {
         return res.json();
       })
-      .then((res) => {});
+      .then((data) => {
+        setFetchData(data);
+      });
   };
 
   return (
